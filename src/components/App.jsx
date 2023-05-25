@@ -16,11 +16,11 @@ export const App = () => {
     const [filter, setFilter] = useState('');
 
         
-    useEffect((prevState) =>{
-      if(prevState !== contacts) {
+    useEffect(() =>{
+      
             const localString = JSON.stringify(contacts)
            window.localStorage.setItem('contacts', localString)
-      }
+    
     }, [contacts])
 
 
